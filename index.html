@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thomas Keller Gastronomía</title>
+    <link rel="stylesheet" href="./assets/estilos css/stil.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./assets/estilos css/imagenes/Captura_de_pantalla_2024-05-21_200104-removebg-preview (1).png" alt="Thomas Keller Gastronomía">
+        </div>
+        <div class="menu-icon" id="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#">recetas</a></li>
+            <li><a href="#">sugerencias</a></li>
+            <li><a href="#">preguntas frecuentes</a></li>
+            <li><a href="#">chef</a></li>
+            <li><a href="inicio.html" class="btn-iniciar-sesion">iniciar sesion</a></li>
+        </ul>
+    </nav>
+
+    <script>
+        const menuIcon = document.getElementById('menu-icon');
+        const navLinks = document.getElementById('nav-links');
+
+        menuIcon.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+    <h1>THOMAS KELLER</h1>
+</body>
+</html>

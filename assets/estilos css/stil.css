@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+h1{
+    margin: 25px;
+    font-size: 45px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #800000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.logo img {
+    width: 200px;
+}
+
+.menu-icon {
+    display: none;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.btn-iniciar-sesion {
+    background-color: #FFC107;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.nav-links.active {
+    display: block;
+    position: absolute;
+    top: 130px;
+    left: 0;
+    width: 100%;
+    background-color: #800000;
+    padding: 10px 0;
+}
+
+.nav-links.active li {
+
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .menu-icon {
+        display: block;
+        margin-left: -70px;
+    }
+}
